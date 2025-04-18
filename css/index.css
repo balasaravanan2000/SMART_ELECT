@@ -1,0 +1,28 @@
+
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: #fff;
+    margin-top: -20px;
+  
+    height: 80px;
+  }
+  .img1{
+    margin-left: -20px;
+  }
+  
+    
+  .div1{
+    display: flex;
+    float: right;
+    font-size: 5px;
+  }
+select{
+  
+  font-size:5px; ;
+}
+  
+  
