@@ -295,3 +295,61 @@ button {
 a{
   color: #000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .div1 {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+
+  .overlay-image2 {
+    width: 90%;
+    left: 5%;
+  }
+
+  .div4 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .steps-section {
+    flex-direction: column;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
