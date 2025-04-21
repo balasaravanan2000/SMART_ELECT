@@ -12,7 +12,7 @@ header {
   gap: 10px;
   background-color: #fff;
   margin-top: -6px;
-  margin-right: -10px;
+  
 
   height: 80px;
 }
@@ -24,10 +24,10 @@ header {
 
 .div1 {
   display: flex;
-  float: right;
+  justify-content: flex-end;
+  flex-grow: 1;
   font-size: 20px;
   margin-top: 10px;
-  margin-left: 570px;
   gap: 20px;
 }
 
@@ -131,23 +131,20 @@ button {
 
 .overlay-image2 {
   position: absolute;
-  top: 70px;
-  /* Position from the top */
-
-  left: 500px;
-  width: 500px;
-  /* Small 40px x 40px image */
-  height: 230px;
+  top: 5vw; /* relative to viewport width */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40vw; /* responsive width */
+  max-width: 500px;
+  height: auto;
   z-index: 2;
 }
 
 .overlay-image2 img {
   width: 100%;
-  /* Ensure the image inside the div fits */
-  height: 100%;
-  /* Ensure the image inside the div fits */
+  height: auto;
   object-fit: contain;
-  /* Prevent distortion */
+  display: block;
 }
 
 .overlay-image3 {
@@ -203,10 +200,11 @@ button {
 }
 
 .steps-images img {
-  width: 151 px;
-  height: 244 px;
-  left: 80px;
+  width: 151px;
+  height: 244px;
+  object-fit: cover;
 }
+
 
 .numbered-circle-list {
   list-style: none;
@@ -285,8 +283,9 @@ button {
  
 }
 .div4 img{
- height: 220px;
- width: 520px;
+  height: auto;
+  width: 100%;
+  max-width: 520px;
 }
 .div5 img{
   object-fit: cover;
